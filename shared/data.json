@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Mich Mich",
+        "death": "30/11/2025",
+        "birth": "24/02/2000",
+        "coords": {
+            "z": 45.88209533691406,
+            "x": -1784.53564453125,
+            "y": -263.9168090820313
+        },
+        "cause": "Accident de voiture",
+        "photo": "https://i.ytimg.com/vi/9LjQhPwk-l0/mqdefault.jpg",
+        "id": 1
+    }
+]
