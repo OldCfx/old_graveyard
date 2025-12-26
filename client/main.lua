@@ -84,7 +84,8 @@ end)
 
 CreateThread(function()
     while true do
-        Wait(0)
+        local sleep = 1000
+
         local pCoords = GetEntityCoords(PlayerPedId())
         canPressE = false
         closestGrave = nil
@@ -94,7 +95,9 @@ CreateThread(function()
             local dist = #(pCoords - pos)
 
             if dist < Config.DrawDistance then
-                DrawMarker(Config.MarkerType, pos.x, pos.y, pos.z - 1.0, 0.0, 0.0, 0.0, 0, 0, 0,
+                sleep = 0
+                DrawMarker(Config.MarkerType, pos.x, pos.y, pos.z - 1.0,
+                    0.0, 0.0, 0.0, 0, 0, 0,
                     0.6, 0.6, 0.6,
                     Config.MarkerColor.r, Config.MarkerColor.g,
                     Config.MarkerColor.b, Config.MarkerColor.a,
@@ -102,6 +105,7 @@ CreateThread(function()
             end
 
             if dist < Config.InteractDistance then
+                sleep = 0
                 canPressE = true
                 closestGrave = grave
                 lib.showTextUI('[E] - Lire la stèle', {
@@ -113,8 +117,11 @@ CreateThread(function()
         if not canPressE then
             lib.hideTextUI()
         end
+
+        Wait(sleep)
     end
 end)
+
 
 
 CreateThread(function()

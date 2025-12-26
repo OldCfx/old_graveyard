@@ -2,8 +2,6 @@ local resourcePath = GetResourcePath(GetCurrentResourceName())
 local dataFile = resourcePath .. '/shared/data.json'
 
 
-
-
 local function loadData()
     local f = io.open(dataFile, 'r')
     if not f then
@@ -23,8 +21,6 @@ local function saveData(data)
     f:write(json.encode(data, { indent = true }))
     f:close()
 end
-
-
 
 
 RegisterNetEvent('old_graveyard:addGrave', function(grave)

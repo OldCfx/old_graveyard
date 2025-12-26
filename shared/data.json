@@ -1,15 +1,28 @@
 [
     {
-        "name": "Mich Mich",
-        "death": "30/11/2025",
-        "birth": "24/02/2000",
-        "coords": {
-            "z": 45.88209533691406,
-            "x": -1784.53564453125,
-            "y": -263.9168090820313
-        },
-        "cause": "Accident de voiture",
         "photo": "https://i.ytimg.com/vi/9LjQhPwk-l0/mqdefault.jpg",
-        "id": 1
+        "name": "Mich Mich",
+        "cause": "Accident de voiture",
+        "coords": {
+            "x": -1784.53564453125,
+            "y": -263.9168090820313,
+            "z": 45.88209533691406
+        },
+        "death": "30/11/2025",
+        "id": 1,
+        "birth": "24/02/2000"
+    },
+    {
+        "photo": "",
+        "name": "test ",
+        "birth": "26/12/2025",
+        "coords": {
+            "x": -1759.6475830078126,
+            "y": -249.77310180664063,
+            "z": 51.81079483032226
+        },
+        "death": "26/12/2025",
+        "id": 2,
+        "cause": "dsqdqs"
     }
 ]
